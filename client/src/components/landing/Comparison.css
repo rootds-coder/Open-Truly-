@@ -1,0 +1,136 @@
+/* ═══════════════════════════════════════════════════
+   COMPARISON MATRIX — Sleek table design
+═══════════════════════════════════════════════════ */
+
+.comp-sec {
+    background: #06060f;
+    padding: 110px 0;
+    position: relative;
+}
+
+.comp-sec::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(124, 58, 237, 0.35), transparent);
+}
+
+.comp-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+.comp-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.comp-label {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #7c3aed;
+    margin-bottom: 16px;
+}
+
+.comp-title {
+    font-size: 46px;
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -1.5px;
+    color: #ffffff;
+    margin: 0 0 16px;
+}
+
+.comp-title span {
+    background: linear-gradient(135deg, #a78bfa, #7c3aed);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.comp-sub {
+    font-size: 16px;
+    color: #64748b;
+    max-width: 520px;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.comp-table-wrap {
+    background: #0a0a14;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.comp-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.comp-table th {
+    padding: 20px 24px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 700;
+    color: #94a3b8;
+    background: #0f0f1f;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.comp-table th.comp-highlight {
+    color: #a78bfa;
+    background: rgba(124, 58, 237, 0.12);
+}
+
+.comp-table td {
+    padding: 20px 24px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    vertical-align: middle;
+}
+
+.comp-table tr:last-child td {
+    border-bottom: none;
+}
+
+.comp-feature {
+    font-weight: 700;
+    color: #ffffff;
+    width: 25%;
+}
+
+.comp-old {
+    color: #64748b;
+    width: 35%;
+}
+
+.comp-devil {
+    color: #f1f5f9;
+    font-weight: 600;
+    width: 40%;
+    background: rgba(124, 58, 237, 0.04);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.comp-devil svg {
+    flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    .comp-title { font-size: 32px; }
+    .comp-table-wrap { overflow-x: auto; }
+    .comp-table { min-width: 640px; }
+}

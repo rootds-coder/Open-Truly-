@@ -1,0 +1,6 @@
+/* Drip Sequences Styles */
+.ds-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}

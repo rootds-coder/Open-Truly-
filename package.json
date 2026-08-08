@@ -1,0 +1,43 @@
+{
+    "name": "open-truly-chat",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "build": "cd client && npm install && npm run build",
+        "dev": "nodemon",
+        "pm2:start": "pm2 start ecosystem.config.cjs",
+        "pm2:stop": "pm2 stop open-truly-chat",
+        "pm2:restart": "pm2 restart open-truly-chat",
+        "pm2:logs": "pm2 logs open-truly-chat",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@hapi/boom": "^10.0.1",
+        "@whiskeysockets/baileys": "^6.7.16",
+        "connect-mongo": "^6.0.0",
+        "cookie-parser": "^1.4.7",
+        "dotenv": "^17.2.3",
+        "express": "^5.2.1",
+        "express-rate-limit": "^7.1.5",
+        "express-session": "^1.18.0",
+        "fs": "^0.0.1-security",
+        "helmet": "^7.1.0",
+        "mongodb": "^6.3.0",
+        "multer": "^2.0.2",
+        "open": "^11.0.0",
+        "openai": "^6.18.0",
+        "path": "^0.12.7",
+        "pino": "^9.0.0",
+        "qrcode": "^1.5.4",
+        "socket.io": "^4.8.3"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.0",
+        "pm2": "^5.3.0"
+    },
+    "description": ""
+}

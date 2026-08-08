@@ -1,0 +1,30 @@
+# Node & Build Output
+node_modules/
+dist/
+client/dist/
+build/
+*.zip
+*.tar.gz
+*.log
+
+# WhatsApp Authentication & Sessions
+auth_info_baileys/
+wwwebauth/
+files/
+.wwebjs_auth/
+.wwebjs_cache/
+default.opus
+
+# Environment & Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.cert
+
+# OS & IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
