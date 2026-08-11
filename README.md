@@ -113,8 +113,10 @@ This repository contains **NO API keys, passwords, credentials, or session token
 
 ---
 
-## 📜 License
+## 📜 License & Credits
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-Developed by **Dhruv** 🚀
+- **Original Open-Truly-Chat Project**: Developed by [jeetvani](https://github.com/jeetvani/open-truly-chat)
+- **Major Baileys Engine & UI Upgrade**: Developed by **Dhruv** ([rootds-coder](https://github.com/rootds-coder)) 🚀
+

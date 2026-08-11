@@ -3,8 +3,8 @@
 ═══════════════════════════════════════════════════ */
 
 .faq-sec {
-    background: #06060f;
-    padding: 110px 0;
+    background: transparent;
+    padding: 80px 0;
     position: relative;
 }
 
@@ -70,17 +70,19 @@
 }
 
 .faq-item {
-    background: #0a0a14;
-    border: 1px solid rgba(255, 255, 255, 0.07);
+    background: rgba(17, 19, 24, 0.65);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 16px;
     overflow: hidden;
     transition: all 0.25s ease;
 }
 
 .faq-item--open {
-    border-color: rgba(124, 58, 237, 0.3);
-    background: #0d0d1a;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    border-color: rgba(139, 92, 246, 0.35);
+    background: rgba(22, 24, 32, 0.85);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), 0 0 24px rgba(139, 92, 246, 0.1);
 }
 
 .faq-question {

@@ -46,14 +46,14 @@
 /* Layout */
 .hero {
     position: relative;
-    min-height: 100vh;
+    min-height: 88vh;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #06060f;
-    padding: 120px 0 80px;
+    background: transparent;
+    padding: 96px 0 48px;
 }
 
 /* Mesh / orb background */
@@ -152,23 +152,23 @@
 }
 
 .hero__title {
-    font-size: 58px;
+    font-size: clamp(2.5rem, 5vw, 3.65rem);
     font-weight: 800;
     line-height: 1.08;
     letter-spacing: -2px;
-    color: #ffffff;
+    color: var(--text-primary, #f8fafc);
     margin: 0;
 }
 
 .hero__title-accent {
-    background: linear-gradient(135deg, #a78bfa, #7c3aed);
+    background: var(--gradient-accent, linear-gradient(135deg, #c4b5fd, #8b5cf6, #7c3aed));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
 .hero__subtitle {
-    color: #6b7280;
+    color: var(--text-secondary, #a1aebf);
     font-size: 17px;
     line-height: 1.75;
     max-width: 480px;
@@ -287,14 +287,16 @@
 .hero__card {
     width: 100%;
     max-width: 400px;
-    background: #0f0f1a;
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(17, 19, 24, 0.72);
+    backdrop-filter: blur(20px) saturate(160%);
+    -webkit-backdrop-filter: blur(20px) saturate(160%);
+    border: 1px solid rgba(255, 255, 255, 0.09);
     border-radius: 24px;
     overflow: hidden;
     box-shadow:
-        0 0 0 1px rgba(124, 58, 237, 0.12),
-        0 40px 80px rgba(0, 0, 0, 0.6),
-        0 0 60px rgba(124, 58, 237, 0.1);
+        0 0 0 1px rgba(139, 92, 246, 0.1),
+        0 40px 80px rgba(0, 0, 0, 0.55),
+        0 0 60px rgba(139, 92, 246, 0.12);
 }
 
 .hero__card-header {

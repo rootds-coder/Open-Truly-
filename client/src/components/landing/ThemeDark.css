@@ -1,0 +1,248 @@
+/* ═══════════════════════════════════════════════════════════════
+   PREMIUM DARK MODE — Landing page polish
+   Applied when [data-theme="dark"] on .tc-landing
+═══════════════════════════════════════════════════════════════ */
+
+@import "../../styles/variables.css";
+
+/* ── Page shell ── */
+[data-theme="dark"] .tc-landing {
+  background: var(--bg);
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .tc-landing main {
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Ambient background (purple-tinted orbs) ── */
+[data-theme="dark"] .tc-ambient .tc-orb-1 {
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.22) 0%, transparent 68%);
+}
+
+[data-theme="dark"] .tc-ambient .tc-orb-2 {
+  background: radial-gradient(circle, rgba(37, 211, 102, 0.12) 0%, transparent 68%);
+}
+
+[data-theme="dark"] .tc-ambient .tc-orb-3 {
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.14) 0%, transparent 68%);
+}
+
+[data-theme="dark"] .tc-grid-bg {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.022) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.022) 1px, transparent 1px);
+  opacity: 0.85;
+}
+
+/* ── Alternating section depth ── */
+[data-theme="dark"] .feat,
+[data-theme="dark"] .personas,
+[data-theme="dark"] .comp-sec,
+[data-theme="dark"] .faq-sec {
+  background: transparent;
+}
+
+[data-theme="dark"] .demo-sec,
+[data-theme="dark"] .hiw-sec,
+[data-theme="dark"] .cta {
+  background: var(--gradient-section);
+}
+
+[data-theme="dark"] .hero {
+  background: transparent;
+}
+
+/* ── Shared section dividers ── */
+[data-theme="dark"] .feat::before,
+[data-theme="dark"] .demo-sec::before,
+[data-theme="dark"] .personas::before,
+[data-theme="dark"] .hiw-sec::before,
+[data-theme="dark"] .comp-sec::before,
+[data-theme="dark"] .faq-sec::before,
+[data-theme="dark"] .cta::before {
+  background: var(--gradient-divider);
+}
+
+/* ── Glass cards (shared pattern) ── */
+[data-theme="dark"] .feat__card,
+[data-theme="dark"] .persona,
+[data-theme="dark"] .hiw-card,
+[data-theme="dark"] .faq-item,
+[data-theme="dark"] .comp-table-wrap,
+[data-theme="dark"] .demo-box,
+[data-theme="dark"] .hero__card {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border-color: var(--glass-border);
+  box-shadow: var(--shadow-sm), inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+[data-theme="dark"] .feat__card:hover,
+[data-theme="dark"] .persona:hover,
+[data-theme="dark"] .hiw-card:hover {
+  background: var(--glass-bg-strong);
+  border-color: var(--border-accent);
+  box-shadow: var(--shadow-md), var(--shadow-glow), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+[data-theme="dark"] .cta__box {
+  background: var(--glass-bg-strong);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border-color: var(--border-accent);
+  box-shadow: var(--shadow-lg), var(--shadow-glow), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+[data-theme="dark"] .demo-tab {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+}
+
+[data-theme="dark"] .demo-tab--active {
+  background: var(--glass-bg-strong);
+  box-shadow: var(--shadow-sm), 0 0 24px rgba(139, 92, 246, 0.18);
+}
+
+/* ── Navbar glass ── */
+[data-theme="dark"] .nav-pill {
+  background: rgba(12, 14, 20, 0.72);
+  border-color: var(--glass-border);
+  box-shadow: var(--shadow-sm), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+[data-theme="dark"] .nav-wrapper--scrolled .nav-pill {
+  background: rgba(12, 14, 20, 0.92);
+  border-color: var(--border-accent);
+  box-shadow: var(--shadow-md), var(--shadow-glow), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+/* ── Footer ── */
+[data-theme="dark"] .footer {
+  background: rgba(5, 6, 10, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-top-color: var(--border-default);
+}
+
+/* ── Text contrast fixes ── */
+[data-theme="dark"] .hero__subtitle,
+[data-theme="dark"] .feat__desc,
+[data-theme="dark"] .personas__desc,
+[data-theme="dark"] .cta__desc,
+[data-theme="dark"] .feat__card-desc,
+[data-theme="dark"] .persona__sample-text {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .hero__stat span,
+[data-theme="dark"] .demo-sub,
+[data-theme="dark"] .hiw-sub,
+[data-theme="dark"] .comp-sub,
+[data-theme="dark"] .faq-sub,
+[data-theme="dark"] .demo-tab-tag,
+[data-theme="dark"] .hiw-card-desc {
+  color: var(--text-muted);
+}
+
+[data-theme="dark"] .feat__tag,
+[data-theme="dark"] .persona__sample-label,
+[data-theme="dark"] .hero__card-footer-label,
+[data-theme="dark"] .cta__note,
+[data-theme="dark"] .footer__copy {
+  color: var(--text-muted);
+}
+
+[data-theme="dark"] .footer__links a {
+  color: var(--text-secondary);
+}
+
+/* ── Primary buttons glow ── */
+[data-theme="dark"] .hero__btn--primary,
+[data-theme="dark"] .nav-cta-btn,
+[data-theme="dark"] .cta__btn--primary,
+[data-theme="dark"] .demo-send-btn {
+  background: var(--primary-dark);
+  box-shadow: 0 4px 20px rgba(124, 58, 237, 0.45);
+}
+
+[data-theme="dark"] .hero__btn--primary:hover,
+[data-theme="dark"] .nav-cta-btn:hover,
+[data-theme="dark"] .cta__btn--primary:hover,
+[data-theme="dark"] .demo-send-btn:hover:not(:disabled) {
+  background: #6d28d9;
+  box-shadow: 0 8px 32px rgba(124, 58, 237, 0.55);
+}
+
+/* ── FAQ open state ── */
+[data-theme="dark"] .faq-item--open {
+  background: var(--glass-bg-strong);
+  border-color: var(--border-accent);
+  box-shadow: var(--shadow-md), var(--shadow-glow);
+}
+
+/* ── Feature grid ── */
+[data-theme="dark"] .feat__grid {
+  background: var(--border-default);
+  border-color: var(--border-default);
+  box-shadow: var(--shadow-sm);
+}
+
+[data-theme="dark"] .feat__card::after {
+  background: radial-gradient(circle at 0% 0%, rgba(139, 92, 246, 0.12), transparent 60%);
+}
+
+/* ── Hero card inner panels ── */
+[data-theme="dark"] .hero__card-header,
+[data-theme="dark"] .hero__card-footer,
+[data-theme="dark"] .demo-box-head,
+[data-theme="dark"] .demo-input-bar {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+[data-theme="dark"] .hero__msg--user {
+  background: rgba(139, 92, 246, 0.14);
+  border-color: var(--primary-border);
+}
+
+[data-theme="dark"] .hero__msg--ai {
+  background: rgba(139, 92, 246, 0.1);
+  border-color: rgba(139, 92, 246, 0.22);
+}
+
+[data-theme="dark"] .hero__badge {
+  background: var(--glass-bg-strong);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border-color: var(--glass-border);
+}
+
+/* ── Comparison table highlight column ── */
+[data-theme="dark"] .comp-table th.comp-highlight {
+  background: var(--primary-dim);
+  color: var(--primary-light);
+}
+
+[data-theme="dark"] .comp-devil {
+  background: rgba(139, 92, 246, 0.06);
+}
+
+[data-theme="dark"] .comp-table th {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* ── Modals (auth) ── */
+[data-theme="dark"] .tc-modal {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-default);
+  box-shadow: var(--shadow-lg), var(--shadow-glow);
+}
+
+[data-theme="dark"] .tc-modal-overlay {
+  background: rgba(4, 5, 8, 0.78);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}

@@ -3,8 +3,8 @@
 ═══════════════════════════════════════════════════ */
 
 .demo-sec {
-    background: #06060f;
-    padding: 110px 0;
+    background: transparent;
+    padding: 80px 0;
     position: relative;
     overflow: hidden;
 }
@@ -95,8 +95,10 @@
     gap: 12px;
     padding: 12px 24px;
     border-radius: 16px;
-    background: #0d0d1a;
-    border: 1px solid rgba(255, 255, 255, 0.07);
+    background: rgba(17, 19, 24, 0.65);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     cursor: pointer;
     transition: all 0.25s ease;
     text-align: left;
@@ -135,12 +137,15 @@
 .demo-box {
     max-width: 760px;
     margin: 0 auto;
-    background: #0b0b16;
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(17, 19, 24, 0.72);
+    backdrop-filter: blur(20px) saturate(160%);
+    -webkit-backdrop-filter: blur(20px) saturate(160%);
+    border: 1px solid rgba(255, 255, 255, 0.09);
     border-radius: 24px;
     overflow: hidden;
     box-shadow:
-        0 30px 60px rgba(0, 0, 0, 0.6),
+        0 30px 60px rgba(0, 0, 0, 0.55),
+        0 0 40px rgba(139, 92, 246, 0.08),
         inset 0 1px 0 rgba(255, 255, 255, 0.05);
 }
 

@@ -3,8 +3,8 @@
 ═══════════════════════════════════════════════════ */
 
 .comp-sec {
-    background: #06060f;
-    padding: 110px 0;
+    background: transparent;
+    padding: 80px 0;
     position: relative;
 }
 
@@ -66,11 +66,13 @@
 }
 
 .comp-table-wrap {
-    background: #0a0a14;
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(17, 19, 24, 0.72);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.09);
     border-radius: 24px;
     overflow: hidden;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45), 0 0 32px rgba(139, 92, 246, 0.06);
 }
 
 .comp-table {

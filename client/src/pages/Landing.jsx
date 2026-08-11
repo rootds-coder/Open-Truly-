@@ -10,6 +10,7 @@ import FAQ from "../components/landing/FAQ";
 import CTA from "../components/landing/CTA";
 import Footer from "../components/landing/Footer";
 import "../components/landing/ThemeLight.css";
+import "../components/landing/ThemeDark.css";
 
 export default function Landing({ authenticated, setAuthenticated }) {
     const [theme, setTheme] = useState(() => {
@@ -106,6 +107,13 @@ export default function Landing({ authenticated, setAuthenticated }) {
 
     return (
         <div className="tc-landing" data-theme={theme}>
+            <div className="tc-ambient" aria-hidden="true">
+                <div className="tc-orb tc-orb-1" />
+                <div className="tc-orb tc-orb-2" />
+                <div className="tc-orb tc-orb-3" />
+                <div className="tc-grid-bg" />
+            </div>
+
             <Navbar
                 onDashboardClick={handleDashboardClick}
                 theme={theme}
